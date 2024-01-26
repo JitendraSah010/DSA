@@ -8,6 +8,7 @@ int unique(int array[], int n){
     int ans = 0;
     for(int i=0; i<n; i++ ){
         ans = ans ^ array[i];
+        cout<<ans<<" ";
     }
     return ans;
 }
@@ -15,5 +16,6 @@ int unique(int array[], int n){
 int main(){
     int number[7] = {4,2,3,4,2,3,1};
     int uniqueElement = unique(number, 7);
+    cout<<endl;
     cout<<uniqueElement;
 }
